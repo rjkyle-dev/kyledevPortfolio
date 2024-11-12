@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philippines</title>
+  <style>
+         *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+     body{
+      background-color: #3054f7;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+     .gallery{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /* background-color: green; */
+     } 
+     .gallery-item{
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      /* background-color: red; */
+     }
+        .china-img{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+      border: 2px solid #000;
+     
+      /* background-color: blue; */
+     }
+     .china-img:hover{
+      transform: scale(1.05);
+      transition: transform 0.5s ease-in-out;
+       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+      border: 1px solid #ffffff;
+
+     }
+     img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     }
+     header{
+      position: absolute;
+      top: -7em;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #000;
+     }
+     a{
+      position: absolute;
+      top: 10em;
+      left: 38em;
+      color: #000000;
+     }
+     .discription{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      overflow-y: auto;
+     }
+   .discription h3, p{
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+   }
+   .discription:hover{
+    opacity: 1;
+    cursor: pointer;
+   }
+   .discription h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+   }
+  </style>
+</head>
+<body>
+  
+  <div class="gallery">
+    <header>
+    <h1>Places in Philippines</h1>
+  </header>
+    <div class="gallery-item">
+      <div class="china-img">
+        <img src="/Kyle_IsSpec3/img/ph/ph.jpg" alt="Philippines">
+        <div class="discription">
+          <h3>The Philippines</h3>
+          <p>
+            The Philippines is a country in Southeast Asia with over 7,000 islands. It is known for its beautiful beaches, vibrant culture, and delicious food.
+          </p>
+        </div>
+      </div>
+      <div class="china-img">
+        <img src="/Kyle_IsSpec3/img/ph/Banaue-Rice-Terraces.jpg" alt="Banaue Rice Terraces" >
+        <div class="discription">
+          <h3>The Banaue Rice Terraces In Ifugao</h3>
+          <p>
+            The Banaue Rice Terraces are a series of rice terraces in the Ifugao province of the Philippines. They are known for their beautiful landscape and are a UNESCO World Heritage Site.
+          </p>
+        </div>
+      </div>
+      <div class="china-img">
+        <img src="/Kyle_IsSpec3/img/ph/Batanes.jpg" alt="Batanes" >
+        <div class="discription">
+          <h3>The Batanes In Batanes</h3>
+          <p>
+            The Batanes are a group of islands in the Philippines. They are known for their beautiful beaches, vibrant culture, and delicious food.
+          </p>
+        </div>
+      </div>
+      <div class="china-img">
+        <img src="/img/ph/bohol.jpg" alt="Bohol" >
+        <div class="discription">
+          <h3>The Bohol In Bohol</h3>
+          <p>
+            The Bohol is a province in the Philippines. It is known for its beautiful beaches, vibrant culture, and delicious food.
+          </p>
+        </div>
+      </div>
+      <div class="china-img">
+        <img src="/Kyle_IsSpec3/img/ph/boracay.jpg" alt="Boracay" >
+        <div class="discription">
+          <h3>The Boracay In Boracay</h3>
+          <p>
+            The Boracay is a province in the Philippines. It is known for its beautiful beaches, vibrant culture, and delicious food.
+          </p>
+        </div>
+      </div>
+      <div class="china-img">
+        <img src="/Kyle_IsSpec3/img/ph/Burnham-Park.jpg" alt="Burnham-Park" >
+        <div class="discription">
+          <h3>The Burnham-Park In Manila</h3>
+          <p>
+            The Burnham-Park is a park in the Philippines. It is known for its beautiful landscape and is a UNESCO World Heritage Site.
+          </p>
+        </div>
+      </div>
+      <div class="china-img">
+        <img src="/Kyle_IsSpec3/img/ph/Calle-Crisologo.jpg " alt="Calle-Crisologo" >
+        <div class="discription">
+          <h3>The Calle-Crisologo In Manila</h3>
+          <p>
+            The Calle-Crisologo is a street in the Philippines. It is known for its beautiful landscape and is a UNESCO World Heritage Site.
+          </p>
+        </div>
+      </div>
+      <div class="china-img">
+        <img src="/Kyle_IsSpec3/img/ph/palawan.jpg" alt="Palawan" >
+        <div class="discription">
+          <h3>The Palawan In Palawan</h3>
+          <p>
+            The Palawan is a province in the Philippines. It is known for its beautiful beaches, vibrant culture, and delicious food.
+          </p>
+        </div>
+      </div>
+      <div class="china-img">
+        <img src="/Kyle_IsSpec3/img/ph/Siargao-Sugba-Lagoon.jpg" alt="Siargao-Sugba-Lagoon" >
+        <div class="discription">
+          <h3>The Siargao-Sugba-Lagoon In Siargao</h3>
+          <p>
+            The Siargao-Sugba-Lagoon is a lagoon in the Philippines. It is known for its beautiful landscape and is a UNESCO World Heritage Site.
+          </p>
+        </div>
+        </div>
+    </div>
+     <a href="/Kyle_IsSpec3/map/LabradorImageMap.html">Back to World Map</a>
+  </div>
+</body>
+</html>

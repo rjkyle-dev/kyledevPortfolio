@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>China</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #fd5656;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .gallery {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: green; */
+      }
+      .gallery-item {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        /* background-color: red; */
+      }
+      .china-img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        border: 2px solid #000;
+
+        /* background-color: blue; */
+      }
+      .china-img:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+        border: 1px solid #ffffff;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      header {
+        position: absolute;
+        top: -7em;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+      }
+      a {
+        position: absolute;
+        top: 10em;
+        left: 38em;
+        color: #000000;
+      }
+      .discription {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        overflow-y: auto;
+      }
+      .discription h3,
+      p {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        overflow: hidden;
+        scroll-behavior: smooth;
+      }
+      .discription:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+      .discription h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <header>
+        <h1>Places inChina</h1>
+      </header>
+      <div class="gallery-item">
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/china/china.jpg" alt="China" />
+
+          <div class="discription">
+            <h3>China</h3>
+            <p>
+              China is a country in East Asia. It is the largest country by land
+              area in the region. It is bordered by India, Nepal, Bhutan,
+              Bangladesh, Myanmar, Laos, Vietnam, Cambodia, Thailand, Malaysia,
+              and Indonesia.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/china/greatwall.png" alt="Great Wall of China" />
+          <div class="discription">
+            <h3>Great Wall of China</h3>
+            <p>
+              The Great Wall of China — the Original Wonder Wall. Nothing
+              remotely like the Great Wall of China exists. It is the greatest
+              human construction project ever, in terms of man hours and lives
+              expended, and it is by far the world's longest wall.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/china/liriver.png" alt="Li River of China" />
+          <div class="discription">
+            <h3>Li River of China</h3>
+            <p>
+              Li River is the most well-known attraction in Guilin, Guangxi
+              Province. Thanks to the Karst landform, the river is lined with
+              green mountains, mysterious caves, grotesque rocks, bottomless
+              pools and splashing waterfalls. Among which, the famous ones
+              include Elephant Trunk Hill, and Ox Gorge. Taking a cruise from
+              Guilin to Yangshuo to appreciate this China natural landscape is
+              highly recommended.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/china/mt.everest.png" alt="Mount Everest" />
+          <div class="discription">
+            <h3>Mount Everest</h3>
+            <p>
+              Mount Everest is unique because it is the world's highest
+              mountain. It is on the border of Tibet and Nepal. A trip to
+              Everest Base Camp in Tibet would make for a transcendent
+              experience amongst epic scenery. We can help arrange a tour that
+              might be one of the greatest adventures of your life.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img
+            src="/Kyle_IsSpec3/img/china/roof.png"
+            alt="The Roof of the World — Transcendent Tibet"
+          />
+          <div class="discription">
+            <h3>The Roof of the World — Transcendent Tibet</h3>
+            <p>
+              From space or for an explorer the Qinghai-Tibet Plateau and its
+              surrounding mountain ranges, known as the Roof of the World, must
+              be the most impressive thing about China. Remote, pristine, and
+              transcendent, this is the destination of dreams.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img
+            src="/Kyle_IsSpec3/img/china/wave.png"
+            alt="The Qiantang Tidal Bore — World Record Tidal Wave"
+          />
+          <div class="discription">
+            <h3>The Qiantang Tidal Bore — World Record Tidal Wave</h3>
+            <p>
+              The Qiantang Tidal Bore is easily the biggest tidal wave in the
+              world. At times, it is 9 meters (29 ft) high! China's natural
+              wonders are all about towering peaks (and deep valleys), but this
+              peak is made of Pacific Ocean water!
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="/Kyle_IsSpec3/map/LabradorImageMap.html">Back to World Map</a>
+    </div>
+  </body>
+</html>

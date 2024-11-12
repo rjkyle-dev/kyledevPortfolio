@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saudi Arabia</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #54ff70;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .gallery {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: green; */
+      }
+      .gallery-item {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        /* background-color: red; */
+      }
+      .china-img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        border: 2px solid #000;
+
+        /* background-color: blue; */
+      }
+      .china-img:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+        border: 1px solid #ffffff;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      header {
+        position: absolute;
+        top: -7em;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+      }
+      a {
+        position: absolute;
+        top: 10em;
+        left: 38em;
+        color: #000000;
+      }
+      .discription {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        overflow-y: auto;
+      }
+      .discription h3,
+      p {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        overflow: hidden;
+        scroll-behavior: smooth;
+      }
+      .discription:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+      .discription h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <header>
+        <h1>Places in Saudi Arabia</h1>
+      </header>
+      <div class="gallery-item">
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/saudi/saudi.jpg" alt="Saudi Arabia" />
+          <div class="discription">
+            <h3>Saudi Arabia</h3>
+            <p>
+              Saudi Arabia is a country in the Middle East. It is known for its
+              beautiful landscape, vibrant culture, and delicious food.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/saudi/farasanIsland.jpg" alt="Farasan Island" />
+          <div class="discription">
+            <h3>Farasan Island</h3>
+            <p>
+              Farasan Island is an island in Saudi Arabia. It is known for its
+              beautiful landscape and is a UNESCO World Heritage Site.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/saudi/maidensaleh.jpg" alt="Maidensaleh" />
+          <div class="discription">
+            <h3>Maidensaleh</h3>
+            <p>
+              Maidensaleh is a place in Saudi Arabia. It is known for its
+              beautiful landscape and is a UNESCO World Heritage Site.
+              Maidensaleh is a place in Saudi Arabia. It is known for its
+              beautiful landscape and is a UNESCO World Heritage Site.
+              Maidensaleh is a place in Saudi Arabia. It is known for its
+              beautiful landscape and is a UNESCO World Heritage Site.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/saudi/najran.jpg" alt="Najran" />
+          <div class="discription">
+            <h3>Najran</h3>
+            <p>
+              Najran is a city in Saudi Arabia. It is known for its beautiful
+              landscape and is a UNESCO World Heritage Site.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/saudi/taif.jpg" alt="Taif" />
+          <div class="discription">
+            <h3>Taif</h3>
+            <p>
+              Taif is a city in Saudi Arabia. It is known for its beautiful
+              landscape and is a UNESCO World Heritage Site.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/saudi/wahbaCrater.jpg" alt="Wahba Crater" />
+          <div class="discription">
+            <h3>Wahba Crater</h3>
+            <p>
+              Wahba Crater is a crater in Saudi Arabia. It is known for its
+              beautiful landscape and is a UNESCO World Heritage Site.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="/Kyle_IsSpec3/map/LabradorImageMap.html">Back to World Map</a>
+    </div>
+  </body>
+</html>

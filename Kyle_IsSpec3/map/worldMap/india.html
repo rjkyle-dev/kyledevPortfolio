@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>India</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #fab349;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .gallery {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: green; */
+      }
+      .gallery-item {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        /* background-color: red; */
+      }
+      .china-img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        border: 2px solid #000;
+
+        /* background-color: blue; */
+      }
+      .china-img:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+        border: 1px solid #ffffff;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      header {
+        position: absolute;
+        top: -7em;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+      }
+      a {
+        position: absolute;
+        top: 10em;
+        left: 38em;
+        color: #000000;
+      }
+      .discription {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        overflow-y: auto;
+      }
+      .discription h3,
+      p {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        overflow: hidden;
+        scroll-behavior: smooth;
+      }
+      .discription:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+      .discription h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <header>
+        <h1>Places in India</h1>
+      </header>
+      <div class="gallery-item">
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/india/india.jpg" alt="India" />
+          <div class="discription">
+            <h3>India</h3>
+            <p>
+              India is a country in South Asia. It is the seventh-largest
+              country by area, the second-most populous country (with over 1.4
+              billion people), and the most populous democracy in the world.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img
+            src="/Kyle_IsSpec3/img/india/1.png"
+            alt="Khajuraho Group Of Monuments In Madhya Pradesh"
+          />
+          <div class="discription">
+            <h3>Khajuraho Group Of Monuments In Madhya Pradesh</h3>
+            <p>
+              The Khajuraho Group of Monuments are a group of Hindu temples in
+              Madhya Pradesh, India, about 175 kilometers southeast of Jhansi.
+              They are one of India's most famous historical sites and are known
+              for their erotic sculptures and architecture.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/india/2.png" alt="Taj Mahal" />
+          <div class="discription">
+            <h3>Taj Mahal</h3>
+            <p>
+              The Taj Mahal is an ivory-white marble mausoleum on the south bank
+              of the Yamuna river in the Indian city of Agra. It was
+              commissioned in 1632 by the Mughal emperor Shah Jahan to house the
+              tomb of his favorite wife, Mumtaz Mahal; it also houses the tomb
+              of Shah Jahan himself.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/india/3.png" alt="The Golden Temple In Punjab" />
+          <div class="discription">
+            <h3>The Golden Temple In Punjab</h3>
+            <p>
+              The Golden Temple is a gurudwara located in the city of Amritsar,
+              Punjab, India. It is the most important pilgrimage site of
+              Sikhism. The temple is built around a man-made pool, which is
+              sacred because it was here that the first Guru, Guru Nanak, is
+              said to have discovered the simple message of Sikhism.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img
+            src="/Kyle_IsSpec3/img/india/4.png"
+            alt="The Hampi Temple Complex In Karnataka"
+          />
+          <div class="discription">
+            <h3>The Hampi Temple Complex In Karnataka</h3>
+            <p>
+              The Hampi Temple Complex is a group of Hindu temples located in
+              the ruins of the city of Hampi, Karnataka, India. The temples are
+              known for their intricate carvings and architecture.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/india/5.png" alt="The Konark Sun Temple In Orissa" />
+          <div class="discription">
+            <h3>The Konark Sun Temple In Orissa</h3>
+            <p>
+              The Konark Sun Temple is a 13th-century CE Hindu temple located in
+              the Konark district of Orissa, India. It is one of India's most
+              famous historical sites and is known for its massive stone
+              chariot.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img
+            src="/Kyle_IsSpec3/img/india/6.png"
+            alt="The Monolithic Gomateshwara Statue In Karnataka"
+          />
+          <div class="discription">
+            <h3>The Monolithic Gomateshwara Statue In Karnataka</h3>
+            <p>
+              The Monolithic Gomateshwara Statue is a 7th-century CE statue of
+              the Buddha located in the Channarayapatna village of Karnataka,
+              India. It is one of India's most famous historical sites and is
+              known for its intricate carvings and architecture.
+            </p>
+          </div>
+        </div>
+        <div class="china-img">
+          <img src="/Kyle_IsSpec3/img/india/7.png" alt="The Nalanda University In Bihar" />
+          <div class="discription">
+            <h3>The Nalanda University In Bihar</h3>
+            <p>
+              The Nalanda University is an ancient university located in the
+              Nalanda district of Bihar, India. It was one of the most famous
+              universities in the world during the Gupta Empire and is known for
+              its ancient library and teachings.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="/Kyle_IsSpec3/map/LabradorImageMap.html">Back to World Map</a>
+    </div>
+  </body>
+</html>
